@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/list_selector"
+    android:padding="10px">
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        >
+
+        <TextView
+            android:id="@+id/data"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Data da coleta: "
+            android:textColor="#ff152d44"
+            android:textStyle="italic"
+            android:textSize="14dp"
+            />
+
+        <TextView
+            android:id="@+id/txtdata"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=" Data"
+            android:textColor="#2f6699"
+            android:textSize="16dp"
+            android:textStyle="italic"
+            />
+
+
+
+        <TextView
+            android:id="@+id/txtqtd"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text=" Qtd"
+            android:textColor="#2f6699"
+            android:textSize="18dp"
+            android:textStyle="italic"
+            android:layout_gravity="right"
+            android:gravity="right"
+            />
+
+
+
+    </LinearLayout>
+
+
+
+</LinearLayout>

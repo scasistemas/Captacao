@@ -1,0 +1,189 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/layout_root2"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical"
+    android:padding="10dp"
+    android:background="#fff7f7f7">
+
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_marginTop="5sp"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="10dp"
+        android:background="@drawable/button_shape_black"
+
+
+        >
+        <TextView
+            android:id="@+id/txtdescri"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Produtor : "
+            android:gravity="center_vertical"
+            android:layout_gravity="center_vertical"
+
+            android:textColor="#fff" />
+
+
+    </LinearLayout>
+
+    <LinearLayout android:layout_width="fill_parent"
+        android:layout_alignParentBottom="true" android:gravity="center_vertical"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:paddingTop="0sp"
+        android:background="#ffff"
+        android:orientation="vertical"
+        >
+
+        <Spinner
+            android:id="@+id/spmateria"
+            android:layout_width="fill_parent"
+            android:layout_height="40dp"
+            android:layout_centerInParent="true"
+            android:layout_margin="2dp"
+
+            />
+
+    </LinearLayout>
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent">
+        <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            android:id="@+id/layout_root"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:orientation="vertical"
+            android:padding="10dp"
+
+            >
+
+            <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:id="@+id/layout_vol"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center"
+                android:background="#ffff"
+                >
+
+                <TextView
+                    android:id="@+id/textView11"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Volume : "
+                    android:textSize="20dp"
+                    android:gravity="center"
+                    android:layout_gravity="center"
+                    />
+
+                <EditText
+                    android:id="@+id/edtxvolume"
+                    android:layout_width="140sp"
+                    android:layout_height=" 50sp"
+                    android:layout_gravity="center"
+                    android:textSize="20sp"
+                    android:hint="Vol."
+                    android:inputType="numberDecimal"
+                    android:gravity="center"
+                    />
+
+            </LinearLayout>
+
+
+            <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:id="@+id/layout_temp"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center"
+                android:layout_marginTop="4dp"
+                android:background="#ffff"
+                >
+
+                <TextView
+                    android:id="@+id/txtTemp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Temp :     "
+                    android:textSize="20dp"
+                    android:gravity="center"
+                    android:layout_gravity="center"
+                    />
+
+                <EditText
+                    android:id="@+id/edtxTemp"
+                    android:layout_width="140sp"
+                    android:layout_height=" 50sp"
+                    android:layout_gravity="center"
+                    android:textSize="20sp"
+                    android:hint="Temp."
+                    android:inputType="numberDecimal"
+                    android:gravity="center"
+                    />
+            </LinearLayout>
+
+            <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:id="@+id/layout_tanque"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center"
+                android:layout_marginTop="4dp"
+                android:background="#ffff"
+
+                >
+                <TextView
+                    android:id="@+id/txtNTanque"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Tanque :  "
+                    android:textSize="20dp"
+                    android:gravity="center"
+                    android:layout_gravity="center"
+                    />
+
+                <EditText
+                    android:id="@+id/edtxNTanque"
+                    android:layout_width="140sp"
+                    android:layout_height=" 50sp"
+                    android:layout_gravity="center"
+                    android:textSize="20sp"
+                    android:hint="Tanque ."
+                    android:inputType="number"
+                    android:gravity="center"
+                    />
+            </LinearLayout>
+
+            <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:id="@+id/layout_hora"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center"
+                android:layout_marginTop="4dp"
+
+                >
+
+                <TextView android:layout_width="fill_parent" android:layout_height="fill_parent"
+                    android:id="@+id/txthora"
+                    android:layout_gravity="right"
+                    android:textColor="#ff000000"
+                    android:layout_alignParentRight="true"
+                    android:gravity="right"
+                    android:textSize="12dp"
+                    android:textStyle="italic"/>
+
+             </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+
+
+
+
+</LinearLayout>

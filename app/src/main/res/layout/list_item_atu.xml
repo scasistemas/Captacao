@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal"
+
+    >
+    <TextView
+        android:id="@+id/carga"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:layout_marginLeft="5dp"
+        android:text="Versao:"
+
+        />
+
+    <TextView
+        android:id="@+id/nomeCarga"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="5dp"
+        android:text="Medium Text"
+        android:layout_toRightOf="@+id/carga"
+        />
+
+    <TextView
+        android:id="@+id/data"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="5dp"
+        android:text=" data"
+        android:textColor="#2f6699"
+        android:textSize="12dp"
+        android:textStyle="italic"
+        android:layout_below="@+id/nomeCarga"
+        />
+    <TextView
+        android:id="@+id/espaco"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="      "
+        android:textColor="#2f6699"
+        android:textSize="12dp"
+        android:textStyle="italic"
+        android:layout_below="@+id/nomeCarga"
+        android:layout_toRightOf="@+id/data"
+        />
+
+
+    <TextView
+        android:id="@+id/hora"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=" hora"
+        android:textColor="#2f6699"
+        android:textSize="12dp"
+        android:textStyle="italic"
+        android:layout_below="@+id/nomeCarga"
+        android:layout_toRightOf="@+id/espaco"
+        />
+
+</RelativeLayout>

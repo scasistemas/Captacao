@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <array name="op_menu_principalAtividades">
+        <item>@string/op_menu_principa_atender_cliente</item>
+    </array>
+
+    <array name="op_menu_principalCliente">
+        <item>@string/op_menu_principa_pre_cadastro</item>
+        <item>@string/op_menu_principa_consultar_cliente</item>
+        <item>@string/op_menu_principa_consultar_pedidos_cliente</item>
+    </array>
+    <array name="op_menu_principalLozalizar">
+        <item>@string/op_menu_principa_localizar_cliente</item>
+        <item>@string/op_menu_principa_localizarRota_cliente</item>
+        <item>@string/op_menu_principa_GereneciarRotas_cliente</item>
+
+
+    </array>
+
+    <array name="op_rotas">
+        <item>@string/op_rotas_verped</item>
+        <item>@string/op_rotas_cancelvis</item>
+
+    </array>
+
+    <array name="op_menu_lancam">
+        <item>@string/op_menu_lancam_enviar</item>
+    </array>
+
+    <array name="op_menu_deletar">
+        <item>@string/op_menu_deletar</item>
+        <item>@string/op_menu_cancelar</item>
+    </array>
+    <array name="op_menu_principalPedidos">
+        <item>@string/op_menu_principa_pedidos_n_enviados</item>
+        <item>@string/op_menu_principa_lotes_pedido</item>
+    </array>
+
+    <array name="op_menu_principalOrcamentos">
+        <item>@string/op_menu_principa_orcamento_n_enviados</item>
+        <item>@string/op_menu_principa_orcamentos</item>
+    </array>
+
+    <array name="op_menu_principalSinc">
+        <item>@string/op_menu_principa_sinc_total</item>
+        <item>@string/op_menu_principa_sinc_receber_config</item>
+        <item>@string/op_menu_principa_sinc_inf</item>
+    </array>
+
+
+    <array name="op_menu_WIFI_OFFLINE">
+        <item>@string/op_menu_sinc_wifi</item>
+        <item>@string/op_menu_sinc_drive</item>
+        <item>@string/op_menu_sinc_off</item>
+    </array>
+
+    <array name="op_menu_GD_DRIVE">
+        <item>@string/op_menu_sinc_wifi</item>
+        <item>@string/op_menu_sinc_drive</item>
+    </array>
+
+    <array name="op_menu_BKP_REST">
+        <item>@string/op_menu_BKP</item>
+        <item>@string/op_menu_REST</item>
+    </array>
+
+    <array name="op_menu_SDCARD_INT">
+        <item>@string/op_menu_INTERNO</item>
+        <item>@string/op_menu_SDCARD</item>
+        <item>@string/op_menu_Voltar</item>
+    </array>
+
+    <array name="op_finalizarVenda">
+        <item>@string/op_sim</item>
+        <item>@string/op_nao</item>
+    </array>
+
+
+    <array name="op_at_cliente">
+        <item>@string/op_atend_cliente_sim</item>
+        <item>@string/op_atend_cliente_nao</item>
+
+    </array>
+
+
+    <array name="op_menu_cliente">
+        <item>@string/op_menu_cliente_salvar</item>
+        <item>@string/op_menu_cliente_sair</item>
+    </array>
+
+    <array name="op_menu_consulta_cliente">
+        <item>@string/op_menu_cliente_sair</item>
+    </array>
+
+    <array name="op_menu_ok">
+        <item>@string/op_menu_cliente_ok</item>
+    </array>
+    <array name="op_alerta_sim_nao">
+        <item>@string/op_alerta_sim</item>
+        <item>@string/op_alerta_nao</item>
+    </array>
+
+    <array name="op_alerta_editar_excluir_item">
+        <item>@string/op_alerta_editar_item</item>
+        <item>@string/op_alerta_excluir_item</item>
+    </array>
+
+    <array name="op_alerta_vis_enviar_ped">
+        <item>@string/op_alerta_reeviar_item</item>
+        <item>@string/op_alerta_visualizar_item</item>
+    </array>
+
+    <array name="op_alerta_sair">
+        <item>@string/op_sim</item>
+        <item>@string/op_nao</item>
+    </array>
+
+    <array name="op_menu_produtor">
+        <item>@string/op_menu_produtor_salvar</item>
+        <item>@string/op_menu_produtor_sair</item>
+        <item>@string/op_menu_produtor_configuracoes</item>
+
+    </array>
+
+    <array name="op_menu_principal">
+        <item>@string/op_menu_principa_sinc_enviar_pendentes</item>
+        <item>@string/op_menu_principa_sinc_total</item>
+        <item>@string/op_menu_produtor_configuracoes</item>
+        <item>@string/op_menu_produtor_config_impressora</item>
+        <item>@string/op_menu_produtor_atu_system</item>
+        <item>@string/op_menu_produtor_bkpgeral</item>
+        <item>@string/op_menu_produtor_sair</item>
+    </array>
+
+    <array name="op_menu_env">
+        <item>@string/op_menu_produtor_sair</item>
+    </array>
+
+    <array name="op_alerta_sai">
+        <item>@string/op_alerta_editar_item</item>
+        <item>@string/op_alerta_excluir_item</item>
+    </array>
+
+
+</resources>

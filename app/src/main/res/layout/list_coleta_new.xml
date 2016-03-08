@@ -1,0 +1,103 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    >
+    <TableLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:shrinkColumns="3"  android:stretchColumns="3" >
+
+
+    <!-- Row 2 with 3 columns -->
+
+    <TableRow
+        android:id="@+id/tableRow1"
+        android:layout_height="fill_parent"
+        android:layout_width="fill_parent"
+        android:layout_weight="1"
+        >
+        <TextView android:layout_width="fill_parent" android:layout_height="fill_parent"
+            android:id="@+id/codprod"
+            android:layout_gravity="left"
+            android:textColor="#ff050505"
+            android:layout_alignParentRight="true"
+            android:text="Produto"
+            android:textSize="12dp"
+            android:layout_weight="0.5"
+            android:background="@drawable/cell_shape"
+
+
+
+            />
+        <TextView android:layout_width="fill_parent" android:layout_height="fill_parent"
+            android:id="@+id/txtnome"
+            android:layout_gravity="left"
+            android:textColor="#ff0e0e0e"
+            android:layout_alignParentRight="true"
+            android:text="Nome"
+            android:textSize="12dp"
+            android:layout_weight="5.5"
+
+
+
+            />
+
+        <TextView android:layout_width="fill_parent" android:layout_height="fill_parent"
+            android:id="@+id/txtvolume"
+            android:layout_gravity="left"
+            android:textColor="#ff0e0e0e"
+            android:layout_alignParentRight="true"
+            android:text="Volume"
+            android:textSize="12dp"
+            android:layout_weight="2.5"
+            />
+
+
+    </TableRow>
+
+        <TableRow
+            android:id="@+id/tableRow2"
+            android:layout_height="fill_parent"
+            android:layout_width="fill_parent"
+            android:layout_weight="1"
+            >
+            <TextView android:layout_width="fill_parent" android:layout_height="fill_parent"
+                android:id="@+id/txtmargem"
+                android:layout_gravity="left"
+                android:textColor="#ff050505"
+                android:layout_alignParentRight="true"
+                android:textSize="12dp"
+                android:layout_weight="0.5"
+
+
+
+                />
+            <TextView android:layout_width="fill_parent" android:layout_height="fill_parent"
+                android:id="@+id/txtfazenda"
+                android:layout_gravity="left"
+                android:textColor="#ffbaae1e"
+                android:layout_alignParentRight="true"
+                android:text="Nome"
+                android:textSize="12dp"
+                android:layout_weight="5.5"
+
+
+
+                />
+
+            <TextView android:layout_width="fill_parent" android:layout_height="fill_parent"
+                android:id="@+id/txtmargem2"
+                android:layout_gravity="left"
+                android:textColor="#ff0e0e0e"
+                android:layout_alignParentRight="true"
+                android:textSize="12dp"
+                android:layout_weight="2.5"
+                />
+
+
+        </TableRow>
+    </TableLayout>
+
+</LinearLayout>

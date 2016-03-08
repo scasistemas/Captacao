@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="fill_parent">
+
+    <LinearLayout android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_horizontal"
+        android:padding="4dp"
+        >
+        <ImageButton
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:gravity="right"
+            android:background="@drawable/ic_launcher"
+            android:layout_marginRight="2dp"/>
+        <Button
+            android:id="@+id/btPedidosMenuPricipal" android:text="Captacao"
+            android:layout_weight="0.5" android:layout_width="wrap_content"
+            android:textColor="#ff314730" android:layout_height="wrap_content"
+            android:gravity="left|center" android:background="#00000000" />
+        <ImageButton
+            android:src="@drawable/ic_action_overflow"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:onClick="opcoesDoMenu"
+            android:gravity="center"
+            android:background="@drawable/button_shape_action_bar"
+            android:layout_gravity="right"
+
+            />
+
+    </LinearLayout>
+
+    <LinearLayout android:layout_width="fill_parent" android:id="@+id/listatus"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" android:background="#fff7f7f7"
+        android:layout_weight="0"
+        >
+
+
+
+
+        <LinearLayout android:layout_width="fill_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:gravity="center_horizontal"
+            android:padding="4dp"
+
+
+            >
+            <EditText
+                android:id="@+id/datain"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_weight="1"
+                android:hint="Data ini."
+                android:textSize="12dp"
+
+                />
+            <EditText
+                android:id="@+id/datafim"
+                android:textSize="12dp"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_weight="1"
+                android:hint="Data fin."/>
+            <ImageButton
+                android:src="@drawable/ic_action_search"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:onClick="popularLista"
+                android:gravity="right"
+                android:background="@drawable/button_shape_green_corner"
+                android:layout_marginRight="2dp"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+    <LinearLayout android:layout_width="fill_parent"
+
+        android:layout_height="wrap_content"
+        android:layout_marginTop="0sp"
+        android:paddingTop="0sp"
+        android:background="#FFF"
+        android:orientation="vertical"
+        android:layout_weight="2"
+        >
+
+        <ListView
+            android:id="@+id/listlanc"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:clickable="true"/>
+    </LinearLayout>
+
+    <LinearLayout android:layout_width="fill_parent"
+
+        android:layout_height="wrap_content"
+        android:layout_marginTop="0sp"
+        android:paddingTop="0sp"
+        android:background="#FFF"
+        android:orientation="vertical"
+        >
+        <TableLayout
+            xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:shrinkColumns="1"  android:stretchColumns="1" >
+
+
+
+            <!-- Row 2 with 3 columns -->
+
+            <TableRow
+                android:id="@+id/tableRow1"
+                android:layout_height="fill_parent"
+                android:layout_width="fill_parent"
+                android:layout_weight="1"
+                android:padding="8dp"
+
+                >
+
+
+                <Button
+                    android:id="@+id/btenviar" android:text="Enviar"
+                    android:background="@drawable/button_shape_green"
+                    android:textColor="#fff6f6fa" android:layout_height="fill_parent" android:onClick="enviar"
+                    android:gravity="center" android:layout_weight="2" />
+
+                <DatePicker
+                    android:id="@+id/date_picker"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:visibility="gone"/>
+
+            </TableRow>
+
+
+        </TableLayout>
+    </LinearLayout>
+
+</LinearLayout>
+

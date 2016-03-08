@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TableLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:shrinkColumns="3"  android:stretchColumns="3" android:background="#fffefeff">
+
+
+
+    <!-- Row 2 with 3 columns -->
+
+    <TableRow
+        android:id="@+id/tableRow1"
+        android:layout_height="fill_parent"
+        android:layout_width="fill_parent"
+        android:layout_weight="1"
+        >
+        <TextView android:layout_width="fill_parent" android:layout_height="fill_parent"
+            android:id="@+id/produto"
+            android:layout_gravity="left"
+            android:textColor="#ff050505"
+            android:layout_alignParentRight="true"
+            android:text="Produto"
+            android:textSize="12dp"
+            android:layout_weight="0.5"
+            android:background="@drawable/cell_shape"
+
+
+            />
+        <TextView android:layout_width="fill_parent" android:layout_height="fill_parent"
+            android:id="@+id/nomeCli"
+            android:layout_gravity="left"
+            android:textColor="#ff0e0e0e"
+            android:layout_alignParentRight="true"
+            android:text="Nome"
+            android:textSize="12dp"
+            android:layout_weight="5.5"
+            android:background="@drawable/cell_shape"
+
+
+            />
+
+        <TextView android:layout_width="fill_parent" android:layout_height="fill_parent"
+            android:id="@+id/nomeCli2"
+            android:layout_gravity="left"
+            android:textColor="#ff0e0e0e"
+            android:layout_alignParentRight="true"
+            android:text="Volume"
+            android:textSize="12dp"
+            android:layout_weight="2.5"
+            android:background="@drawable/cell_shape"
+
+
+            />
+
+
+    </TableRow>
+    <TableRow
+        android:id="@+id/tableRow123"
+        android:layout_height="fill_parent"
+        android:layout_width="fill_parent"
+        android:layout_weight="1"
+        >
+        <TextView android:layout_width="fill_parent" android:layout_height="fill_parent"
+            android:id="@+id/produto2"
+            android:layout_gravity="left"
+            android:textColor="#ff050505"
+            android:layout_alignParentRight="true"
+            android:text="Produto"
+            android:textSize="12dp"
+            android:layout_weight="0.5"
+            android:background="@drawable/cell_shape"
+
+
+            />
+        <TextView android:layout_width="fill_parent" android:layout_height="fill_parent"
+            android:id="@+id/nomeCli23"
+            android:layout_gravity="left"
+            android:textColor="#ff0e0e0e"
+            android:layout_alignParentRight="true"
+            android:text=".Caminho Android"
+            android:textSize="12dp"
+            android:layout_weight="5.5"
+            android:background="@drawable/cell_shape"
+
+
+            />
+
+        <EditText android:id="@+id/volume"
+            android:layout_width="fill_parent" android:layout_height="fill_parent"
+            android:layout_weight="2.5"
+            android:background="@drawable/cell_shape"
+            />
+
+
+    </TableRow>
+</TableLayout>

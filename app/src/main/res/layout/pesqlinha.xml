@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/dialog_layout"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:background="@drawable/bg"
+    android:padding="8dp">
+
+    <TableLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:shrinkColumns="3"  android:stretchColumns="3"
+        android:background="@drawable/bg2">
+
+
+        <LinearLayout android:layout_width="fill_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:gravity="center_horizontal"
+            android:background="@drawable/button_shape_green"
+
+            >
+            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                android:text="Pesquisar Linha "
+                android:textColor="#ffff"
+                android:textSize="20dp"
+                android:layout_gravity="center"
+
+                />
+
+        </LinearLayout>
+
+
+
+        <!-- Row 2 with 3 columns -->
+
+        <TableRow
+            android:id="@+id/tableRow1"
+            android:layout_height="fill_parent"
+            android:layout_width="fill_parent"
+            android:layout_weight="1"
+            >
+            <ImageButton
+                android:src="@drawable/ic_action_search2"
+                android:layout_width="wrap_content"
+                android:layout_height="50sp"
+                android:background="@android:color/transparent"
+                android:layout_gravity="right"
+                />
+
+            <EditText
+                android:id="@+id/searchText"
+                android:layout_width="fill_parent"
+                android:layout_height="40dp"
+                android:layout_marginTop="4px"
+                android:tag="searchText"
+                android:layout_weight="9"/>
+            <Button
+                android:layout_weight="1"
+                android:layout_width="10dp"
+                android:layout_height="52dp"
+                android:background="@android:color/transparent"
+                android:textColor="#fff6f6fa"
+                android:onClick="limpa"
+                android:drawableStart="@drawable/ic_action_backspace"
+                />
+        </TableRow>
+    </TableLayout>
+
+    <TableLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:shrinkColumns="3"  android:stretchColumns="3" android:background="@android:color/transparent">
+
+
+
+        <!-- Row 2 with 3 columns -->
+
+        <TableRow
+            android:id="@+id/tableRow8"
+            android:layout_height="fill_parent"
+            android:layout_width="fill_parent"
+            android:layout_weight="1"
+            >
+
+        </TableRow>
+    </TableLayout>
+
+    <ListView
+        android:id="@+id/list"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"/>
+
+</LinearLayout>
+

@@ -1,0 +1,174 @@
+<resources>
+
+
+    <string name="tabela_lancamentos">
+        CREATE TABLE IF NOT EXISTS [lancamentos] (
+        [_id] INTEGER PRIMARY KEY AUTOINCREMENT,
+        [codigo] TEXT(6),
+        [fazenda] TEXT(2),
+        [materia] TEXT(3),
+        [linha] TEXT(4),
+        [data] TEXT,
+        [hora] TEXT,
+        [volume] double,
+        [ntanque] int,
+        [temperatura] double);
+    </string>
+
+     <string name="tabela_configgd">
+        CREATE TABLE IF NOT EXISTS configgd (
+        _id INTEGER PRIMARY KEY AUTOINCREMENT,
+        folderpai TEXT(100),
+        folderexp TEXT(100),
+        foldercol TEXT(100),
+        foldervs TEXT(100));
+    </string>
+
+
+
+    <string name="tabela_fazenda">
+        CREATE TABLE IF NOT EXISTS [fazenda] (
+        [_id] INTEGER PRIMARY KEY AUTOINCREMENT,
+        [codigo] TEXT(6),
+        [fazenda] TEXT(2),
+        [descri] TEXT(30),
+        [sequencia] TEXT(3));
+	</string>
+
+    <string name="tabela_linha">
+        CREATE TABLE IF NOT EXISTS [linha] (
+        [_id] INTEGER PRIMARY KEY AUTOINCREMENT,
+        [lincodigo] TEXT(4),
+        [lindescri] TEXT(25));
+	</string>
+
+    <string name="tabela_materia">
+        CREATE TABLE IF NOT EXISTS [materia] (
+        [_id] INTEGER PRIMARY KEY AUTOINCREMENT,
+        [codigo] TEXT(3),
+        [nome] TEXT(30));
+	</string>
+
+    <string name="tabela_motorista">
+        CREATE TABLE IF NOT EXISTS [motorista] (
+        [_id] INTEGER PRIMARY KEY AUTOINCREMENT,
+        [codigo] TEXT(4),
+        [nome] TEXT(30),
+        [endereco] TEXT(30),
+        [login] TEXT(15),
+        [senha] TEXT(15),
+        [emp] TEXT(6),
+        [logindrive] TEXT(100));
+    </string>
+
+    <string name="tabela_produtor">
+    CREATE TABLE IF NOT EXISTS [produtor] (
+        [_id] INTEGER PRIMARY KEY AUTOINCREMENT,
+        [codigo] TEXT(6),
+        [nome] TEXT(30),
+        [codmateria] TEXT(6),
+        [codlinha] TEXT(4),
+        [codfazenda] TEXT(6));
+	</string>
+
+      <string name="atualiza_bd_vs3_1">
+        ALTER TABLE lancamentos ADD COLUMN ntanque int;
+    </string>
+
+
+    <string name="app_name">Captacao</string>
+
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+
+    <string name="op_menu_principa_localizar_cliente">Localizar Cliente</string>
+    <string name="op_menu_principa_localizarRota_cliente">Localizar por Rota</string>
+    <string name="op_menu_principa_GereneciarRotas_cliente">Gerenciar Visitas</string>
+    <string name="op_rotas_cancelvis">Excluir Visita</string>
+    <string name="op_rotas_verped">Ver pedido</string>
+    <string name="buscar">Buscar</string>
+    <string name="aviso">Você foi mencionado!</string>
+    <string name="titulo">mencionou você</string>
+    <string name="hello">Mercado vs. Beta</string>
+    <string name="configs_label">Configurações</string>
+    <string name="configs_atalhos">s</string>
+    <string name="op_menu_principal">Opcoes</string>
+    <string name="op_menu_pedido">Pedidos</string>
+    <string name="op_menu_orcamento">Orçamentos</string>
+    <string name="op_atend_cliente">1 pendência de pagamento</string>
+    <string name="op_atend_cliente_sim">Prosseguir</string>
+    <string name="op_atend_cliente_nao">Voltar</string>
+    <string name="op_menu_principa_atender_cliente">Atender Cliente</string>
+    <string name="op_menu_principa_pre_cadastro">Efetuar Pré Cadastro</string>
+    <string name="op_menu_principa_consultar_cliente">Dados do Cliente</string>
+    <string name="op_menu_principa_consultar_pedidos_cliente">Pedidos do Cliente</string>
+    <string name="op_menu_principa_pedidos_n_enviados">Pedidos não Enviados</string>
+    <string name="op_menu_principa_lotes_pedido">Pedidos Enviados</string>
+    <string name="op_menu_principa_orcamento_n_enviados">Orçamentos</string>
+    <string name="op_menu_principa_orcamentos">Orçamentos Enviados.</string>
+    <string name="op_menu_principa_sinc_enviar_pendentes">Dados Coletados</string>
+    <string name="op_menu_principa_sinc_total">Sincronizar Dados</string>
+    <string name="op_menu_principa_sinc_receber">Atualizar Tab.Preço</string>
+    <string name="op_menu_principa_sinc_receber_config">Receber Configuração</string>
+    <string name="op_menu_principa_sinc_inf">Informações do Sistema</string>
+    <string name="op_menu_cliente_salvar">Salvar</string>
+    <string name="op_menu_cliente_sair">Sair</string>
+    <string name="op_menu_cliente_ok">OK</string>
+    <string name="op_alerta_sim">Sim</string>
+    <string name="op_alerta_nao">Não</string>
+    <string name="op_alerta_editar_item">Editar Item</string>
+    <string name="op_alerta_excluir_item">Excluir Item</string>
+    <string name="op_alerta_reeviar_item">Reenviar Pré Venda</string>
+    <string name="op_alerta_reimp_tit">Impressão</string>
+    <string name="op_alerta_reimp_mens">Deseja reimprimir?</string>
+    <string name="op_alerta_visualizar_item">Visualizar Pré Venda</string>
+    <string name="op_menu_produtor_salvar">Salvar</string>
+    <string name="op_menu_produtor_configuracoes">Configuracoes</string>
+    <string name="op_menu_produtor_config_impressora">Config. Impressora</string>
+    <string name="op_menu_produtor_atu_system">Atualizar Sistema</string>
+    <string name="op_menu_produtor_bkpgeral">Backup Geral</string>
+    <string name="op_menu_produtor_sair">Sair</string>
+    <string name="op_menu_pedido_creceber">Info. Financeira</string>
+    <string name="op_menu_lancam_enviar">Enviar</string>
+    <string name="op_menu_lancam_limpar">Limpar Pesq.</string>
+    <string name="op_menu_sair">Sair</string>
+    <string name="op_menu_deletar">Deletar</string>
+    <string name="op_menu_cancelar">Cancelar</string>
+    <string name="op_menu_sinc_wifi">Wifi</string>
+    <string name="op_menu_sinc_drive">Google Drive</string>
+    <string name="op_menu_sinc_off">Offline</string>
+    <string name="op_menu_BKP">Backup</string>
+    <string name="op_menu_REST">Restaure</string>
+    <string name="op_menu_INTERNO">Arm. Interno</string>
+    <string name="op_menu_SDCARD">SD CARD</string>
+    <string name="op_menu_Voltar">Voltar</string>
+    <string name="header">header</string>
+    <string name="dialog_area"></string>
+    <string name="dialog_code"></string>
+    <string name="dialog_area_hint"></string>
+    <string name="dialog_code_hint"></string>
+    <string name="menu_add">menu_add</string>
+    <string name="about_summary">Android Calendar View Demo V0.5.0</string>
+    <string name="about">About</string>
+    <string name="pick_summary">start with ACTION_PICK</string>
+    <string name="pick">Pick up a Date</string>
+    <string name="show_summary">start with ACTION_VIEW</string>
+    <string name="show">Show Calendar</string>
+    <string name="op_sim">Sim</string>
+    <string name="op_nao">Não</string>
+    <string name="hint">Hint: touch the first or last day of month to move to previous or next month.</string>
+
+    //bluetooth
+    <string name="text_bluetooth_off">Bluetooth Desligado</string>
+    <string name="text_bluetooth_on">Bluetooth Ligado</string>
+    <string name="text_enable">Habilitar</string>
+    <string name="text_disable">Desabilitar</string>
+    <string name="text_view_paired">Dispositivos Pareados</string>
+    <string name="text_scan_devices">Procurar Dispositivos</string>
+    <string name="text_stop_scan">Procurar Dispositivos</string>
+    <string name="text_list_paired_devices">Dispositivos Pareados</string>
+    <string name="text_list_devices">Lista de Dispositvos</string>
+    <string name="text_pag_teste">Pagina Teste</string>
+
+    <string name="text_pair">Pair</string>
+</resources>

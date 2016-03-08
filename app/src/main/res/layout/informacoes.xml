@@ -1,0 +1,288 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent" android:id="@+id/xsubLayout"
+    android:keepScreenOn="true" android:orientation="vertical"
+    android:layout_height="wrap_content" android:padding="8dp"  android:background="#fff7f7f7">
+    <TableLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:shrinkColumns="2"  android:stretchColumns="2" >
+
+        <!-- Row 2 with 3 columns -->
+
+
+        <LinearLayout>
+
+
+
+            <TextView android:layout_width="fill_parent" android:layout_height="fill_parent"
+                android:id="@+id/txSaldo"
+                android:textColor="#fff"
+                android:layout_alignParentRight="true"
+                android:text="Configuracoes do Sistema"
+                android:textSize="18dp"
+                android:gravity="center"
+                android:layout_gravity="left"
+                android:drawableStart="@drawable/ic_action_about"
+                android:background="@drawable/blackinfo"
+                />
+
+
+        </LinearLayout>
+
+        <TableRow
+            android:id="@+id/tableRow"
+            android:layout_height="fill_parent"
+            android:layout_width="fill_parent"
+
+            >
+            <TextView android:layout_width="fill_parent" android:layout_height="fill_parent"
+                android:id="@+id/txtCaminhoLoc"
+                android:layout_gravity="left"
+                android:textColor="#ff000000"
+                android:layout_alignParentRight="true"
+                android:text="Memoria Primaria"
+                android:textSize="12dp"
+
+                />
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/tableRow13"
+            android:layout_height="fill_parent"
+            android:layout_width="fill_parent"
+            android:layout_weight="0"
+            >
+            <EditText android:id="@+id/editAnd" android:layout_width="fill_parent"
+                android:focusableInTouchMode="true"  android:layout_weight="1" android:layout_height="44dp"
+                android:textSize="12dp"/>
+
+            <Button android:id="@+id/infoAnd"
+                android:layout_width="wrap_content" android:layout_height="33dp"
+                android:layout_gravity="center_horizontal"
+                android:text="Info."
+                android:textColor="#fff"
+                android:textSize="12dp"
+                android:layout_marginRight="5dp"
+                android:onClick="infoAndInt"
+                android:background="@drawable/button_shape_green"/>
+
+
+        </TableRow>
+
+
+        <TableRow
+            android:id="@+id/tableRowsd"
+            android:layout_height="fill_parent"
+            android:layout_width="fill_parent"
+
+            >
+            <TextView android:layout_width="fill_parent" android:layout_height="fill_parent"
+                android:id="@+id/txtnomeSd"
+                android:layout_gravity="left"
+                android:textColor="#ff000000"
+                android:layout_alignParentRight="true"
+                android:text="Memoria Secundária"
+                android:textSize="12dp"
+
+                />
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/tableRowsd2"
+            android:layout_height="fill_parent"
+            android:layout_width="fill_parent"
+            android:layout_weight="0"
+            >
+            <EditText android:id="@+id/editAndSD" android:layout_width="fill_parent"
+                android:focusableInTouchMode="true"  android:layout_weight="1" android:layout_height="44dp"
+                android:textSize="12dp"/>
+
+            <Button android:id="@+id/infoAndSD"
+                android:layout_width="wrap_content" android:layout_height="33dp"
+                android:layout_gravity="center_horizontal"
+                android:text="Info."
+                android:textColor="#fff"
+                android:textSize="12dp"
+                android:layout_marginRight="5dp"
+                android:onClick="infoAndSD"
+                android:background="@drawable/button_shape_green"/>
+
+
+        </TableRow>
+
+
+
+
+
+
+        <TableRow
+            android:id="@+id/tableRow15"
+            android:layout_height="fill_parent"
+            android:layout_width="fill_parent"
+
+            >
+            <TextView android:layout_width="fill_parent" android:layout_height="fill_parent"
+                android:id="@+id/txSaldo6"
+                android:layout_gravity="left"
+                android:textColor="#ff000000"
+                android:layout_alignParentRight="true"
+                android:text=".Caminho Servidor"
+                android:textSize="12dp"
+                />
+        </TableRow>
+
+
+        <TableRow
+            android:id="@+id/tableRow0"
+            android:layout_height="fill_parent"
+            android:layout_width="fill_parent"
+            android:layout_weight="0"
+            >
+
+            <EditText android:id="@+id/editExp" android:layout_width="fill_parent"
+                android:focusableInTouchMode="true"  android:layout_weight="1" android:layout_height="44dp"
+                android:textSize="12dp"/>
+
+            <Button android:id="@+id/altServ"
+                android:layout_width="wrap_content" android:layout_height="33dp"
+                android:layout_gravity="center_horizontal"
+                android:text="Alterar"
+                android:textColor="#fff"
+                android:textSize="12dp"
+                android:layout_marginRight="5dp"
+                android:onClick="habserv"
+                android:background="@drawable/button_shape_green"/>
+        </TableRow>
+        <TableRow
+            android:id="@+id/RowDriveIdTxt"
+            android:layout_height="fill_parent"
+            android:layout_width="fill_parent"
+
+            >
+            <TextView android:layout_width="fill_parent" android:layout_height="fill_parent"
+                android:id="@+id/txtDriveId"
+                android:layout_gravity="left"
+                android:textColor="#ff000000"
+                android:layout_alignParentRight="true"
+                android:text=".Email Google Drive"
+                android:textSize="12dp"
+                />
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/RowDriveId"
+            android:layout_height="fill_parent"
+            android:layout_width="fill_parent"
+            android:layout_weight="0"
+            >
+
+            <EditText android:id="@+id/edtxdriveid" android:layout_width="fill_parent"
+                android:focusableInTouchMode="true"  android:layout_weight="1" android:layout_height="44dp"
+                android:textSize="12dp"/>
+
+            <Button android:id="@+id/altgd"
+                android:layout_width="wrap_content" android:layout_height="33dp"
+                android:layout_gravity="center_horizontal"
+                android:text="Recriar "
+                android:textColor="#fff"
+                android:textSize="12dp"
+                android:layout_marginRight="5dp"
+                android:onClick="criarConfigs"
+                android:background="@drawable/button_shape_green"/>
+
+
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/tableRow121"
+            android:layout_height="fill_parent"
+            android:layout_width="fill_parent"
+
+            >
+            <TextView android:layout_width="fill_parent" android:layout_height="fill_parent"
+                android:id="@+id/txSaldo34"
+                android:layout_gravity="left"
+                android:textColor="#ff000000"
+                android:layout_alignParentRight="true"
+                android:text="Usuario"
+                android:textSize="12dp"
+                />
+        </TableRow>
+        <TableRow
+            android:id="@+id/tableRow14"
+            android:layout_height="fill_parent"
+            android:layout_width="fill_parent"
+            android:layout_weight="0"
+            >
+
+            <EditText android:id="@+id/editUsu" android:layout_width="fill_parent"
+                android:focusableInTouchMode="true"  android:layout_weight="1" android:layout_height="wrap_content"
+                android:textSize="12dp"/>
+
+
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/tableRow16"
+            android:layout_height="fill_parent"
+            android:layout_width="fill_parent"
+
+            >
+            <TextView android:layout_width="fill_parent" android:layout_height="fill_parent"
+                android:id="@+id/txSaldo112"
+                android:layout_gravity="left"
+                android:textColor="#ff000000"
+                android:layout_alignParentRight="true"
+                android:text="Empresa - Versão"
+                android:textSize="12dp"
+                />
+
+        </TableRow>
+        <TableRow
+            android:id="@+id/tableRow145"
+            android:layout_height="fill_parent"
+            android:layout_width="fill_parent"
+            android:layout_weight="0"
+            >
+
+            <EditText android:id="@+id/editEmp" android:layout_width="fill_parent"
+                android:focusableInTouchMode="true"  android:layout_weight="1" android:layout_height="wrap_content"
+                android:textSize="12dp"/>
+
+
+
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/tableRow109"
+            android:layout_height="fill_parent"
+            android:layout_width="fill_parent"
+
+            >
+
+
+        </TableRow>
+
+
+        <TableRow
+            android:id="@+id/tableRow1"
+            android:layout_height="fill_parent"
+            android:layout_width="fill_parent"
+
+            >
+            <Button android:id="@+id/altEnv"
+                android:layout_weight="1"
+                android:layout_width="fill_parent" android:layout_height="fill_parent"
+                android:text="Voltar"
+                android:background="@drawable/button_shape_green"
+                android:textColor="#ffffffff"
+                android:onClick="voltar"
+                android:layout_marginRight="5dp"
+
+                />
+        </TableRow>
+
+    </TableLayout>
+</RelativeLayout>

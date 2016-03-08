@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/txvinfo2"
+        android:orientation="vertical"
+        android:layout_below="@+id/subtitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/cell_shape2"
+
+        >
+
+        <TextView    android:text="Prod. "
+            android:id="@+id/codprodh"
+            android:layout_width="70sp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:padding="3dp"
+            android:textColor="#fffaffff"
+            android:gravity="center"
+            android:textSize="14dp"
+            android:textStyle="italic"
+            android:background="#ff4f6c4c"
+
+            />
+
+        <LinearLayout
+            android:orientation="horizontal" android:layout_width="match_parent" android:background="#ff4f6c4c"
+            android:layout_height="wrap_content"  android:layout_toRightOf="@id/codprodh" android:id="@+id/linome"   >
+
+        <TextView    android:text="Nome / Faz. "
+            android:id="@+id/nomeh"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#ffffffff"
+            android:gravity="center"
+            android:textSize="14dp"
+            android:layout_marginLeft="4dp"
+
+            android:padding="3dp"
+            android:layout_toRightOf="@id/codprodh"
+            android:textStyle="italic"/>
+            <TextView    android:text="Volume "
+                android:id="@+id/txtvolumeh"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:textColor="#ffffffff"
+                android:textSize="14dp"
+                android:textStyle="italic"
+                android:layout_alignParentRight="true"
+                android:gravity="right"
+
+                android:paddingRight="24dp"
+                android:layout_marginRight="4dp"/>
+        </LinearLayout>
+
+
+
+
+        <TextView    android:text="00000 "
+            android:id="@+id/codprod"
+            android:layout_width="70sp"
+            android:layout_height="40sp"
+            android:layout_alignParentLeft="true"
+            android:paddingTop="3dp"
+
+            android:textColor="#ff1e1e1e"
+            android:gravity="center"
+            android:layout_below="@id/codprodh"
+            android:textSize="13dp"
+            android:background="@drawable/cell_shape2"
+            />
+
+
+        <LinearLayout
+            android:orientation="vertical" android:layout_width="match_parent" android:background="@drawable/cell_shape2"
+            android:layout_height="40sp"  android:layout_toRightOf="@id/codprod" android:layout_below="@id/codprodh" >
+        <TextView    android:text="Nome: "
+            android:id="@+id/txtnome"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/codprod"
+            android:textSize="14dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="4dp"
+
+
+
+           />
+        <TextView    android:text="Fazenda: "
+            android:id="@+id/txtfazenda"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/codprod"
+            android:layout_below="@id/txtnome"
+            android:textSize="12dp"
+            android:textColor="#ff51814b"
+            android:layout_marginLeft="5dp"
+            android:textStyle="italic"
+
+
+            />
+        </LinearLayout>
+
+
+
+        <TextView
+            android:id="@+id/txtvolume"
+            android:layout_width="100sp"
+            android:layout_height="40sp"
+            android:layout_alignParentRight="true"
+            android:text="0.0 "
+            android:textSize="18dp"
+            android:textColor="#ff6c6c6c"
+            android:gravity="center"
+            android:textStyle="italic"
+            android:layout_below="@id/codprodh"
+            android:paddingRight="8dp"
+            android:background="@drawable/cell_shape2"
+
+
+
+            />
+
+    </RelativeLayout>
+
+</LinearLayout>

@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<TableLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:shrinkColumns="3"  android:stretchColumns="3" android:background="#ff252526">
+
+
+
+    <!-- Row 2 with 3 columns -->
+
+    <TableRow
+        android:id="@+id/tableRow1"
+        android:layout_height="fill_parent"
+        android:layout_width="fill_parent"
+        android:layout_weight="1"
+        >
+        <Button
+            android:id="@+id/btAtividadesMenuPricipal" android:text="Atender Cliente"
+            android:layout_weight="1"  android:background="@drawable/button_shape_green_corner"
+            android:textColor="#fff6f6fa"  android:layout_height="200sp"
+            android:gravity="center"
+
+            />
+        <Button
+            android:id="@+id/btPedidosMenuPricipal" android:text="Vendas"
+            android:layout_weight="1.5" android:background="@drawable/button_shape" android:drawableStart="@drawable/ic_action_paste"
+            android:textColor="#fff6f6fa" android:layout_height="fill_parent"
+            android:gravity="center" />
+
+    </TableRow>
+
+    <!-- Row 3 with 2 columns -->
+    <TableRow
+        android:layout_height="fill_parent"
+        android:layout_width="fill_parent"
+        android:gravity="center_horizontal"
+        android:layout_weight="1">
+        <Button
+            android:id="@+id/btOrcamento" android:text="Orçamentos"
+            android:layout_weight="1"   android:background="@drawable/button_shape_red" android:drawableStart="@drawable/ic_action_paste"
+            android:textColor="#fff6f6fa" android:layout_height="fill_parent"
+            android:gravity="center"/>
+
+        <Button
+            android:id="@+id/btSincMenuPricipal" android:text="Sincronizar" android:background="@drawable/button_shape_green" android:drawableStart="@drawable/ic_action_refresh"
+            android:layout_weight="1.5"
+            android:textColor="#fff9f9f9" android:layout_height="fill_parent"
+            android:gravity="center"/>
+    </TableRow>
+
+</TableLayout>

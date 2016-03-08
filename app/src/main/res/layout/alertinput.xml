@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/layout_root2"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical"
+    android:padding="10dp" >
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/layout_root1"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="@drawable/blackinfo"
+
+
+        >
+        <TextView
+            android:id="@+id/textView12"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Configurações : "
+            android:gravity="center_vertical"
+            android:layout_gravity="center_vertical"
+            android:drawableStart="@drawable/ic_action_settings"
+            android:textColor="#fff" />
+
+
+    </LinearLayout>
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            android:id="@+id/layout_root"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:orientation="vertical"
+            android:padding="10dp"
+            >
+            <TextView
+                android:id="@+id/textView11"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Endereço : "
+                android:textSize="16dp"
+                android:gravity="center"
+                android:drawableStart="@drawable/ic_action_email"/>
+
+            <EditText
+                android:id="@+id/editTextDialogUserInput"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+
+                />
+            <TextView
+                android:id="@+id/textView13"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Login : "
+                android:textSize="16dp"
+                android:gravity="center_vertical"
+                android:drawableStart="@drawable/ic_action_person"/>
+
+            <EditText
+                android:id="@+id/txtlogin"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                />
+
+            <TextView
+                android:id="@+id/textView1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Senha : "
+                android:textSize="16dp"
+                android:gravity="center_vertical"
+                android:drawableStart="@drawable/ic_action_accounts"
+                />
+
+            <EditText
+                android:id="@+id/txtsenha"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="textPassword"/>
+        </LinearLayout>
+        </ScrollView>
+
+
+
+</LinearLayout>

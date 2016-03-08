@@ -1,0 +1,3 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<database name="SCA"><table name="config"><row><col name="_id">1</col><col name="nome">MOTORISTA 01</col><col name="codigo">0001</col><col name="endereco">smb://LuisGustavo-PC/Users/LuisGustavo/captacao</col><col name="login">LuisGustavo</col><col name="senha">lg982110</col><col name="emp">vitoria</col><col name="fimlinha"></col><col name="saltolinha">
+</col></row></table></database>

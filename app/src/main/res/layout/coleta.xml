@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="fill_parent">
+    <LinearLayout android:orientation="vertical"
+        android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <LinearLayout android:layout_width="fill_parent"
+            android:layout_height="wrap_content"  android:background="#fff7f7f7"
+
+            >
+            <ImageButton
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:gravity="right"
+                android:background="@drawable/ic_launcher"
+                android:layout_marginRight="2dp"/>
+            <Button
+                android:id="@+id/btPedidosMenuPricipal" android:text="Captacao"
+                android:layout_width="wrap_content"
+                android:layout_weight="2"
+                android:textColor="#ff314730" android:layout_height="wrap_content"
+                android:gravity="left|center" android:background="#00000000" />
+            <CheckBox
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Ord. por Sequencia."
+                android:id="@+id/ckbseq"
+                android:textSize="12sp"
+                android:checked="true"
+                />
+
+            <ImageButton
+                android:id="@+id/imgfilt"
+                android:src="@drawable/ic_action_collapse"
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:onClick="sumirPesq"
+                android:gravity="right"
+                android:layout_gravity="right"
+                android:background="#00000000"
+                android:paddingLeft="4dp"
+                />
+
+        </LinearLayout>
+        <LinearLayout android:layout_width="fill_parent"
+            android:layout_alignParentBottom="true" android:gravity="right"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="0sp"
+            android:paddingTop="0sp"
+            android:background="#fff7f7f7"
+            android:layout_margin="5dp"
+            >
+
+            <EditText android:id="@+id/edtxlinha"
+                android:layout_width="fill_parent" android:layout_height="fill_parent"
+                android:layout_weight="2" android:layout_gravity="bottom" android:hint="LiNHA" />
+            <ImageButton
+                android:id="@+id/imgclear"
+                android:src="@drawable/ic_action_backspace"
+                android:layout_width="wrap_content"
+                android:layout_height="50dp"
+                android:onClick="clear"
+                android:gravity="right"
+                android:background="@drawable/button_shape_clear"
+                android:padding="5dp"
+
+                />
+            <ImageButton
+                android:id="@+id/imgpesq"
+                android:src="@drawable/ic_action_search"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:onClick="pesqlinha"
+                android:gravity="right"
+                android:background="@drawable/button_shape_green_corner"
+                android:layout_marginRight="2dp"
+
+
+              />
+            <ImageButton
+                android:id="@+id/imgmais"
+                android:src="@drawable/ic_action_new"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:onClick="opcoesDoMenu"
+                android:gravity="right"
+                android:background="@drawable/button_shape_black_corner"
+                />
+
+
+        </LinearLayout>
+
+
+
+        <LinearLayout android:layout_width="fill_parent"  android:id="@+id/lidata"
+            android:layout_alignParentBottom="true" android:gravity="center_vertical"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="0sp"
+            android:paddingTop="0sp"
+
+
+            >
+            <TextView
+                android:id="@+id/txtdtacol"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:text="Data da Coleta : "
+                android:gravity="center"
+                android:layout_gravity="right"
+                android:textSize="14dp"
+                android:textColor="#ff0d180d" />
+            </LinearLayout>
+
+        <LinearLayout android:layout_width="fill_parent"  android:id="@+id/infopeso"
+            android:layout_alignParentBottom="true" android:gravity="center_vertical"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="0sp"
+            android:paddingTop="0sp"
+            >
+
+            <TextView
+                android:id="@+id/txtpesolinha"
+                android:layout_width="80dp"
+                android:layout_height="wrap_content"
+                android:text="Data da Coleta : "
+                android:textSize="14dp"
+                android:gravity="center"
+                android:layout_weight="1"
+                android:background="#ffdedede"
+                android:textStyle="bold"
+                android:textColor="#ff737373" />
+
+
+
+            <TextView
+                android:id="@+id/txtpesototal"
+                android:layout_width="80dp"
+                android:layout_height="wrap_content"
+                android:text="Data da Coleta : "
+                android:layout_gravity="right"
+                android:textSize="14dp"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:textStyle="bold"
+                android:background="#ffdedede"
+                android:textColor="#ff737373" />
+        </LinearLayout>
+
+
+
+
+        <LinearLayout android:layout_width="match_parent"
+            android:layout_alignParentBottom="true" android:gravity="center_vertical"
+            android:layout_height="fill_parent"
+            android:layout_marginTop="0sp"
+            android:paddingTop="0sp"
+            android:background="#FFF"
+            >
+
+            <ListView
+                android:id="@+id/list"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:clickable="true"/>
+
+        </LinearLayout>
+
+
+
+    </LinearLayout>
+</LinearLayout>
+

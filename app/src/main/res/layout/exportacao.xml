@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/dialog_layout"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <LinearLayout android:layout_width="match_parent"
+        android:layout_alignParentBottom="true" android:gravity="center_vertical"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="0sp"
+        android:paddingTop="0sp"
+        android:background="#FFF"
+        android:orientation="horizontal"
+        >
+        <TextView android:layout_width="fill_parent" android:layout_height="20sp"
+            android:text="Cadastros" android:layout_gravity="right"
+            android:textColor="#00F"
+            android:gravity="center_horizontal"
+            android:layout_alignParentRight="true"
+            />
+    </LinearLayout>
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content">
+
+        <EditText
+            android:id="@+id/datain"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            android:hint="Data ini."
+            android:textSize="12dp"
+
+            />
+        <EditText
+            android:id="@+id/datafim"
+            android:textSize="12dp"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            android:hint="Data fin."/>
+        <Button
+            android:id="@+id/searchButton"
+            android:text=""
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="pesqLista"
+            android:background="@drawable/button_shape_white"
+            android:drawableStart="@drawable/ic_action_search2"
+
+            />
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="10">
+
+
+    <ListView
+        android:id="@+id/list"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"/>
+
+
+    </LinearLayout>
+
+    <TableLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:shrinkColumns="3"  android:stretchColumns="3" android:background="#ff252526"/>
+
+    <!-- Row 2 with 3 columns -->
+
+    <TableRow
+        android:id="@+id/tableRow1"
+        android:layout_height="fill_parent"
+        android:layout_width="fill_parent"
+
+        >
+        <Button
+            android:id="@+id/btvoltar" android:text="voltar"
+            android:background="@drawable/button_shape_blank"
+            android:textColor="#fff6f6fa" android:layout_height="fill_parent" android:onClick="reenviar"
+            android:gravity="center" android:layout_weight="2" />
+        <Button
+            android:id="@+id/btinfo" android:text="Info."
+            android:background="@drawable/button_shape_blank"
+            android:textColor="#fff6f6fa" android:layout_height="fill_parent" android:onClick="reenviar"
+            android:gravity="center" android:layout_weight="2" />
+        <Button
+            android:id="@+id/btenviar" android:text="Enviar"
+            android:background="@drawable/button_shape_blank"
+            android:textColor="#fff6f6fa" android:layout_height="fill_parent" android:onClick="reenviar"
+            android:gravity="center" android:layout_weight="2" />
+
+
+    </TableRow>
+
+
+
+
+</LinearLayout>
